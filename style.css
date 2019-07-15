@@ -1,0 +1,18 @@
+body {
+    background-color: white;
+}
+
+
+#clock-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 0em;
+    font-size: 15em;
+    color: red;
+}
+
+#hex-wrapper {
+    color: red;
+    font-size: 10em;
+    display: flex;
+}
