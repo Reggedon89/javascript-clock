@@ -32,10 +32,13 @@ $(document).ready(() => {
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
     let combine =
-      "#" + hours.toString() + minutes.toString() + seconds.toString();
+      "#" +
+      Number(hours).toString(16) +
+      Number(minutes).toString(16) +
+      Number(seconds).toString(16);
     $("#hex-wrapper").html(combine);
     $("body").css("background", combine);
   }
-  setInterval(showHex, 1000);
+  setInterval(showHex, 1);
   showHex();
 });
